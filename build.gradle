@@ -1,0 +1,17 @@
+apply plugin: 'java'
+
+version '1.0.0'
+
+repositories {
+    mavenCentral()
+
+    maven {
+        name = 'Minecraft'
+        url = 'https://libraries.minecraft.net/'
+    }
+}
+
+dependencies {
+    compile 'com.google.guava:guava:27.1-jre'
+    compile 'net.minecraft:launchwrapper:1.12'
+}
